@@ -1,0 +1,52 @@
+
+body{
+    background-color: rgb(59, 114, 116);
+    color: white;
+}
+
+.container{
+    display:block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20%;
+    font-family: sans-serif;
+    
+   
+
+}
+.botton{
+    animation: delay;
+    border: 1px solid lightgray;
+    padding: 9px 15px;
+    animation-duration: 20s;
+    transition-delay: 6s;
+}
+@keyframes delay{
+    0%{
+        opacity: 0.0;
+    }
+ 
+    99%{
+        opacity: 2;
+    }
+    
+}
+
+.text-top{
+    animation: fall 5s forwards;
+    transform: translateY(-50vh);
+}
+@keyframes fall{
+    100%{
+        transform: translateY(0);
+    }
+}
+.text-left{
+    animation: slide-left 5s forwards;
+    transform: translateX(-245vh);
+}
+@keyframes slide-left{
+    100%{
+        transform: translateX(0);
+    }
+}
